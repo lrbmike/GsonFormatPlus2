@@ -22,7 +22,7 @@ apply plugin: 'java'
 intellij {
     plugins 'java'
     version ideaVersion  //debug version
-    pluginName 'GsonFormatPlus'
+    pluginName 'GsonFormatPlus2'
     updateSinceUntilBuild false
 }
 

@@ -15,4 +15,4 @@ include 'shared'
 include 'api'
 include 'services:webservice'
 */
-rootProject.name = 'GsonFormatPlus'
+rootProject.name = 'GsonFormatPlus2'

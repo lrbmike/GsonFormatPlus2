@@ -167,6 +167,9 @@ public class Config {
         if (annotationStr.equals(Constant.fastAnnotation)) {
             return Constant.fastFullNameAnnotation;
         }
+        if (annotationStr.equals(Constant.fast2Annotation)) {
+            return Constant.fast2FullNameAnnotation;
+        }
         if (annotationStr.equals(Constant.loganSquareAnnotation)) {
             return Constant.loganSquareFullNameAnnotation;
         }

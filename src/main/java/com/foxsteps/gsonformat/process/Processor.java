@@ -32,6 +32,7 @@ public abstract class Processor {
         sProcessorMap.put(ConvertLibrary.Gson, new GsonProcessor());
         sProcessorMap.put(ConvertLibrary.Jackson, new JacksonProcessor());
         sProcessorMap.put(ConvertLibrary.FastJson, new FastJsonProcessor());
+        sProcessorMap.put(ConvertLibrary.FastJson2, new FastJsonProcessor());
         sProcessorMap.put(ConvertLibrary.AutoValue, new AutoValueProcessor());
         sProcessorMap.put(ConvertLibrary.LoganSquare, new LoganSquareProcessor());
         sProcessorMap.put(ConvertLibrary.Other, new OtherProcessor());

@@ -48,6 +48,8 @@ public class SettingDialog extends JFrame {
     private JRadioButton gsonRB;
     private JRadioButton jacksonRB;
     private JRadioButton fastJsonRB;
+
+    private JRadioButton fastJson2RB;
     private JRadioButton otherRB;
     private JRadioButton loganSquareRB;
     private JRadioButton autoValueRB;
@@ -231,6 +233,28 @@ public class SettingDialog extends JFrame {
                 array1Button.setEnabled(false);
             }
         });
+
+        fastJson2RB.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                if (fastJson2RB.isSelected()) {
+                    annotationTF.setText(Constant.fast2Annotation);
+                }
+                annotationTF.setEnabled(false);
+                objectFromDataCB.setEnabled(false);
+                objectFromDataCB.setSelected(false);
+                objectFromData1CB.setEnabled(false);
+                objectFromData1CB.setSelected(false);
+                arrayFromDataCB.setEnabled(false);
+                arrayFromDataCB.setSelected(false);
+                arrayFromData1CB.setEnabled(false);
+                arrayFromData1CB.setSelected(false);
+                objectButton.setEnabled(false);
+                object1Button.setEnabled(false);
+                arrayButton.setEnabled(false);
+                array1Button.setEnabled(false);
+            }
+        });
         loganSquareRB.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -307,6 +331,9 @@ public class SettingDialog extends JFrame {
             annotationTF.setEnabled(false);
         } else if (annotaionStr.equals(Constant.fastAnnotation)) {
             fastJsonRB.setSelected(true);
+            annotationTF.setEnabled(false);
+        } else if (annotaionStr.equals(Constant.fast2Annotation)) {
+            fastJson2RB.setSelected(true);
             annotationTF.setEnabled(false);
         } else if (annotaionStr.equals(Constant.jacksonAnnotation)) {
             jacksonRB.setSelected(true);

@@ -88,6 +88,10 @@ public class Constant {
 
     public static final String fastAnnotation = "@com.alibaba.fastjson.annotation.JSONField\\s*\\(\\s*name\\s*=\\s*\"{filed}\"\\s*\\)";
 
+    public static final String fast2FullNameAnnotation = "@com.alibaba.fastjson2.annotation.JSONField(name=\"{filed}\")";
+
+    public static final String fast2Annotation = "@com.alibaba.fastjson2.annotation.JSONField\\s*\\(\\s*name\\s*=\\s*\"{filed}\"\\s*\\)";
+
     public static final String jacksonAnnotation = "@com.fasterxml.jackson.annotation.JsonProperty\\s*\\(\\s*\"{filed}\"\\s*\\)";
 
     public static final String loganSquareAnnotation = "@com.bluelinelabs.logansquare.annotation.JsonField\\s*\\(\\s*name\\s*=\\s*\"{filed}\"\\s*\\)";

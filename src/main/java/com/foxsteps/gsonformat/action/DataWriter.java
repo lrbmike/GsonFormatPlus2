@@ -44,7 +44,7 @@ public class DataWriter extends WriteCommandAction.Simple {
 
     public void execute(ClassEntity targetClass) {
         this.targetClass = targetClass;
-        ProgressManager.getInstance().run(new Task.Backgroundable(project, "GsonFormat") {
+        ProgressManager.getInstance().run(new Task.Backgroundable(project, "GsonFormat2") {
 
             @Override
             public void run(ProgressIndicator progressIndicator) {
@@ -54,7 +54,7 @@ public class DataWriter extends WriteCommandAction.Simple {
                 progressIndicator.setIndeterminate(false);
                 progressIndicator.setFraction(1.0);
                 StringBuffer sb = new StringBuffer();
-                sb.append("GsonFormat [" + (System.currentTimeMillis() - currentTimeMillis) + " ms]\n");
+                sb.append("GsonFormat2 [" + (System.currentTimeMillis() - currentTimeMillis) + " ms]\n");
 //                sb.append("generate class : ( "+generateClassList.size()+" )\n");
 //                for (String item: generateClassList) {
 //                    sb.append("    at "+item+"\n");

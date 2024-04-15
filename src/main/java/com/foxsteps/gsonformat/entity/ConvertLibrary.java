@@ -13,6 +13,7 @@ public enum ConvertLibrary {
      */
     Jackson,
     FastJson,
+    FastJson2,
     Gson,
     LoganSquare,
     AutoValue,
@@ -29,6 +30,9 @@ public enum ConvertLibrary {
         }
         if (Config.getInstant().getAnnotationStr().equals(Constant.fastAnnotation)) {
             return FastJson;
+        }
+        if (Config.getInstant().getAnnotationStr().equals(Constant.fast2Annotation)) {
+            return FastJson2;
         }
         if (Config.getInstant().getAnnotationStr().equals(Constant.loganSquareAnnotation)) {
             return LoganSquare;
